@@ -1,12 +1,11 @@
 // base page
-import React, {Component, PropTypes} from 'react';
-
-class App extends Component {
+import React, {PropTypes} from 'react';
+import Header from './common/Header';
+class App extends React.Component {
     render() {
         return (
             <div className="container-fluid">
-                <p>Header Here,,,</p>
-                {this.props.children}
+                <Header/> {this.props.children}
             </div>
         );
     }
